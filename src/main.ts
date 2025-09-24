@@ -31,7 +31,7 @@ const typeDefs = `#graphql
 
 const resolvers = {
   Query: {
-    getUser: (_: unknown, { id }: { id: string }) => users.find((user) => user.id === id),
+    getUser: (_: unknown, { id }: { id: string }) => users.find((user) => user.id === id) || null,
     listUsers: (_: unknown, { limit }: { limit: number }) => users.slice(0, limit),
   },
 };
