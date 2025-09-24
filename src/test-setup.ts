@@ -1,5 +1,5 @@
 import { ApolloServer } from '@apollo/server';
-import { typeDefs, resolvers } from './main.js';
+import { typeDefs, resolvers } from './schema.js';
 
 export function createTestServer() {
   return new ApolloServer({
