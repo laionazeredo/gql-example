@@ -4,14 +4,14 @@
   "description": "",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "vitest run",
+    "test:watch": "vitest",
     "start": "node --loader ts-node/esm ./src/main.ts"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^24.5.2",
-
     "vitest": "^3.2.4"
   },
   "dependencies": {
